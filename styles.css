@@ -50,7 +50,7 @@ header {
 
 
 .header-links {
-    padding: 4px;
+    padding: 3px;
     width: 50%;
     color:rgba(232, 230, 227, 0.6);
     text-decoration: none;
@@ -66,6 +66,44 @@ header {
 
 
 /************************************************ NAV *********************************************************************/
+
+
+nav {
+    font-family: "shentox-medium", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding:20px 10px 20px 10px;
+    
+
+}
+
+.nav-links {
+    text-decoration: none;
+    padding:20px 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.04rem;
+    color:#aaa;
+}
+
+.fa-search {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    color:#aaa;
+    margin-left:20px;
+}
+
+nav > .right-align {
+    border-left-style: solid;
+    border-color: #aaa;
+    border-width:1px;
+
+}
+
+.hover-black:hover {
+    color: black;
+}
+
 
 
 
