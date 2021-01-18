@@ -79,209 +79,282 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /************************************************** FONTS  *********************************************************/
 
 @font-face {
-    font-family: ars-maquette;
-    src: url(fonts/ars-maquette-regular.woff);
+  font-family: ars-maquette;
+  src: url(fonts/ars-maquette-regular.woff);
 }
 
 @font-face {
-    font-family: avalon-bold;
-    src: url(fonts/avalon-bold.woff);
+  font-family: avalon-bold;
+  src: url(fonts/avalon-bold.woff);
 }
 
 @font-face {
-    font-family: shenton-medium;
-    src: url(fonts/shentox-medium.woff2);
+  font-family: shenton-medium;
+  src: url(fonts/shentox-medium.woff2);
 }
 
 /************************************************** HEADER *********************************************************/
 
 header {
-    display: flex;
-    justify-content: space-between;
-    font-family: "ars-maquette", sans-serif;
-    background-color: rgb(14, 15, 16);
-    padding: 10px 20px 10px 20px;
-
+  display: flex;
+  justify-content: space-between;
+  font-family: "ars-maquette", sans-serif;
+  background-color: rgb(14, 15, 16);
+  padding: 10px 20px 10px 20px;
 }
 
-
 .header-links {
-    padding: 3px;
-    width: 50%;
-    color: rgba(232, 230, 227, 0.6);
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 500;
+  padding: 3px;
+  width: 50%;
+  color: rgba(232, 230, 227, 0.6);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .first-link {
-    color: white;
+  color: white;
 }
 
 .hover-white:hover {
-    color: white;
+  color: white;
 }
-
 
 /************************************************ NAV *********************************************************************/
 
-
 nav {
-    font-family: "shentox-medium", sans-serif;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 10px 20px 10px;
-
-
+  font-family: "shentox-medium", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 20px 10px;
 }
 
 .nav-links {
-    text-decoration: none;
-    padding: 20px 5px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.01rem;
-    color: #aaa;
+  text-decoration: none;
+  padding: 20px 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  color: #aaa;
 }
 
 .fa-search {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    color: #aaa;
-    margin-left: 20px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  color: #aaa;
+  margin-left: 20px;
 }
 
-nav>.right-align {
-    border-left-style: solid;
-    border-color: #aaa;
-    border-width: 1px;
-
+nav > .right-align {
+  border-left-style: solid;
+  border-color: #aaa;
+  border-width: 1px;
 }
 
 .hover-black:hover {
-    color: black;
+  color: black;
 }
-
 
 /******************************************* HIGHLIGHTS **************************************************************/
 
-
 #highlights {
-    display: grid;
-    height: 560px;
-    margin:1%;
-    grid-template-columns: 2.5fr 1.5fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "big-left top"
-        "big-left bottom";
-    grid-gap:10px;    
-    color:white;
-
+  display: grid;
+  height: 560px;
+  margin: 1%;
+  grid-template-columns: 2.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "big-left top"
+    "big-left bottom";
+  grid-gap: 10px;
+  color: white;
 }
 
-
 .big-left {
-    
-    grid-area: big-left;
-    background-image: url("/assets/x-ray.webp"),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    background-blend-mode: overlay;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-
-
-    
-    
+  grid-area: big-left;
+  background-image: url("/assets/x-ray.webp"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
 }
 
 .highlights-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .highlights-heading-container a {
-    font-size: 3vw;
-    font-weight: 700;
-    margin-bottom: 1%;
+  font-size: 3vw;
+  font-weight: 700;
+  margin-bottom: 1%;
 }
 
-
-.big-left  > img{
-    max-height: fit-content;
-    width: 30%;
-    padding: 20px 2px 5px 15px;
+.big-left > img {
+  max-height: fit-content;
+  width: 30%;
+  padding: 20px 2px 5px 15px;
 }
 
 .small-top {
-    justify-content: flex-end;
-    grid-area: top;
-    background-image: url(/assets/gadget.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-  }
-  
- .small-bottom {
-    justify-content: flex-end;
-    grid-area: bottom;
-    background-image: url(/assets/ev-phantom-rols-royce.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-  }
+  justify-content: flex-end;
+  grid-area: top;
+  background-image: url(/assets/gadget.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
 
+.small-bottom {
+  justify-content: flex-end;
+  grid-area: bottom;
+  background-image: url(/assets/ev-phantom-rols-royce.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
 
 .highlights-heading-container {
-    height: max-content;
+  height: max-content;
 }
 
-.small-highlight-heading  a {
-    font-size: 2vw;
-
+.small-highlight-heading a {
+  font-size: 2vw;
 }
-  
-  @media screen and (max-width: 750px) {
-    #highlights {
-      display: grid;
-      height:1000px;
-      
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr 1fr;
-        grid-template-areas:
-        "big-left"
-        "top"
-        "bottom";
-        
+
+/**************** Latest News *************/
+.latest {
+  width: 75%;
+  margin: auto;
+}
+
+.latest h2 {
+  font: 700 25px "avalon-bold", sans-serif;
+  margin-bottom: 20px;
+}
+
+.link-latest {
+  color: #f42;
+  text-decoration: none;
+}
+
+.latest h2::after {
+  display: inline-block;
+  content: "";
+  height: 16px;
+  width: 16px;
+  margin-left: 4px;
+  background-image: url("assets/latest.svg");
+  background-size: 16px 16px;
+}
+
+.news-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 100%;
+  list-style-type: none;
+}
+
+.news {
+  flex-basis: 25%;
+}
+
+.wrap-news {
+  max-width: 270px;
+  padding: 5px;
+}
+
+.tile {
+  width: 100%;
+  height: 135px;
+}
+
+h4 a {
+  font: 700 16px/1.5 "ars-maquette", sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+h4 a:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.story p {
+  font: 12px/18px "ars-maquette", sans-serif;
+  color: #aaa;
+}
+
+@media screen and (max-width: 750px) {
+  #highlights {
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "big-left"
+      "top"
+      "bottom";
   }
 
   .highlights-item {
-      height: 285px;
-      
+    height: 285px;
   }
-  .highlights-heading-container{
+
+  .highlights-heading-container {
     height: max-content;
-}
-.highlights-heading-container a {
+  }
+
+  .highlights-heading-container a {
     font-size: 4vw;
     font-weight: 700;
     margin-bottom: 1%;
+  }
+
+  .latest {
+    width: 99%;
+  }
+
+  .news-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrap-news {
+    display: flex;
+    max-width: 100%;
+    min-height: 75px;
+  }
+
+  .tile {
+    width: 75px;
+    height: 75px;
+  }
+
+  .story {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5em;
+  }
 }
+
+@media screen and (max-width: 1000px) {
+  .news {
+    flex-basis: 33.333%;
+  }
 }
-  
