@@ -19,4 +19,41 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+/************************************************** FONTS  *********************************************************/
 
+@font-face {
+    font-family: ars-maquette;
+    src: url(fonts/ars-maquette-regular.woff);
+}
+
+@font-face {
+    font-family: avalon-bold;
+    src: url(fonts/avalon-bold.woff);
+}
+
+@font-face {
+    font-family: shenton-medium;
+    src: url(fonts/shentox-medium.woff2);
+}
+
+
+/************************************************** HEADER *********************************************************/
+
+header {
+    display:flex;
+    justify-content: space-between;
+    font-family: "ars-maquette", sans-serif;
+    background-color: rgb(14, 15, 16);
+    padding:10px 20px 10px 20px;
+
+}
+
+
+.header-links {
+    padding: 4px;
+    width: 50%;
+    color:rgba(232, 230, 227, 0.6);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
