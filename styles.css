@@ -1,22 +1,90 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 /************************************************** FONTS  *********************************************************/
@@ -36,15 +104,14 @@ time, mark, audio, video {
     src: url(fonts/shentox-medium.woff2);
 }
 
-
 /************************************************** HEADER *********************************************************/
 
 header {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     font-family: "ars-maquette", sans-serif;
     background-color: rgb(14, 15, 16);
-    padding:10px 20px 10px 20px;
+    padding: 10px 20px 10px 20px;
 
 }
 
@@ -52,16 +119,18 @@ header {
 .header-links {
     padding: 3px;
     width: 50%;
-    color:rgba(232, 230, 227, 0.6);
+    color: rgba(232, 230, 227, 0.6);
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: 500;
 }
+
 .first-link {
-    color:white;
+    color: white;
 }
+
 .hover-white:hover {
-    color:white;
+    color: white;
 }
 
 
@@ -72,31 +141,31 @@ nav {
     font-family: "shentox-medium", sans-serif;
     display: flex;
     justify-content: space-between;
-    padding:20px 10px 20px 10px;
-    
+    padding: 20px 10px 20px 10px;
+
 
 }
 
 .nav-links {
     text-decoration: none;
-    padding:20px 5px;
+    padding: 20px 5px;
     font-size: 0.8rem;
     font-weight: 500;
-    letter-spacing: 0.04rem;
-    color:#aaa;
+    letter-spacing: 0.01rem;
+    color: #aaa;
 }
 
 .fa-search {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    color:#aaa;
-    margin-left:20px;
+    color: #aaa;
+    margin-left: 20px;
 }
 
-nav > .right-align {
+nav>.right-align {
     border-left-style: solid;
     border-color: #aaa;
-    border-width:1px;
+    border-width: 1px;
 
 }
 
@@ -105,5 +174,75 @@ nav > .right-align {
 }
 
 
+/******************************************* HIGHLIGHTS **************************************************************/
 
 
+#highlights {
+    display: grid;
+    height: 560px;
+    margin:1%;
+    grid-template-columns: 2.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "big-left top"
+        "big-left bottom";
+    grid-gap:10px;    
+
+}
+
+
+.big-left {
+    grid-area: big-left;
+    background-color: blue;
+    background-image: url(/assets/x-ray.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    color:white;
+}
+
+.big-left  > img{
+    max-height: fit-content;
+    width: 30%;
+    padding: 20px 2px 5px 15px;
+}
+
+.small-top {
+    grid-area: top;
+    background-image: url(/assets/gadget.jpg);
+    ackground-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  
+ .small-bottom {
+    grid-area: bottom;
+    background-image: url(/assets/ev-phantom-rols-royce.jpg);
+    ackground-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+
+.highlights-heading-container {
+    height:50px;
+    position: relative;
+    bottom: 1px;
+    left: 1px;
+}
+  
+  @media screen and (max-width: 750px) {
+    #highlights {
+      display: grid;
+      height: 500px;
+      
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr 1fr;
+        grid-template-areas:
+        "big-left"
+        "top"
+        "bottom";
+        
+  }
+}
+  
