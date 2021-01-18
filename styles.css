@@ -187,19 +187,41 @@ nav>.right-align {
         "big-left top"
         "big-left bottom";
     grid-gap:10px;    
+    color:white;
 
 }
 
 
 .big-left {
+    
     grid-area: big-left;
-    background-color: blue;
-    background-image: url(/assets/x-ray.webp);
+    background-image: url("/assets/x-ray.webp"),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    color:white;
+
+
+    
+    
 }
+
+.highlights-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+.highlights-heading-container a {
+    font-size: 3vw;
+    font-weight: 700;
+    margin-bottom: 1%;
+}
+
 
 .big-left  > img{
     max-height: fit-content;
@@ -208,33 +230,37 @@ nav>.right-align {
 }
 
 .small-top {
+    justify-content: flex-end;
     grid-area: top;
     background-image: url(/assets/gadget.jpg);
-    ackground-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
   }
   
  .small-bottom {
+    justify-content: flex-end;
     grid-area: bottom;
     background-image: url(/assets/ev-phantom-rols-royce.jpg);
-    ackground-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
   }
 
 
 .highlights-heading-container {
-    height:50px;
-    position: relative;
-    bottom: 1px;
-    left: 1px;
+    height: max-content;
+}
+
+.small-highlight-heading  a {
+    font-size: 2vw;
+
 }
   
   @media screen and (max-width: 750px) {
     #highlights {
       display: grid;
-      height: 500px;
+      height:1000px;
       
         grid-template-columns:1fr;
         grid-template-rows:1fr 1fr 1fr;
@@ -244,5 +270,18 @@ nav>.right-align {
         "bottom";
         
   }
+
+  .highlights-item {
+      height: 285px;
+      
+  }
+  .highlights-heading-container{
+    height: max-content;
+}
+.highlights-heading-container a {
+    font-size: 4vw;
+    font-weight: 700;
+    margin-bottom: 1%;
+}
 }
   
