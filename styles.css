@@ -131,7 +131,6 @@ header {
   color: white;
 }
 
-
 /************************************************ NAV *********************************************************************/
 
 nav {
@@ -184,7 +183,13 @@ nav > .right-align {
 
 .big-left {
   grid-area: big-left;
-  background-image:linear-gradient(180deg, rgba(236,143,27,0) 0%, rgba(0,0,0,1) 100%), linear-gradient(135deg, rgba(242,71,21,0.9) 40%, rgba(0,0,0,0) 75%), url("/assets/x-ray.webp");
+  background-image: linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    linear-gradient(135deg, rgba(242, 71, 21, 0.9) 40%, rgba(0, 0, 0, 0) 75%),
+    url("/assets/x-ray.webp");
   background-size: cover;
   background-position: 50%;
 }
@@ -212,7 +217,12 @@ nav > .right-align {
 .small-top {
   justify-content: flex-end;
   grid-area: top;
-  background-image:linear-gradient(180deg, rgba(236,143,27,0) 0%, rgba(0,0,0,1) 100%), url(/assets/gadget.jpg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(/assets/gadget.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -221,7 +231,12 @@ nav > .right-align {
 .small-bottom {
   justify-content: flex-end;
   grid-area: bottom;
-  background-image:linear-gradient(180deg, rgba(236,143,27,0) 0%, rgba(0,0,0,1) 100%), url(/assets/ev-phantom-rols-royce.jpg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(/assets/ev-phantom-rols-royce.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -357,9 +372,6 @@ h4 a:hover {
   }
 }
 
-
-
-
 /************************************************** FUNDING *************************************************************/
 .funding {
   width: 75%;
@@ -367,41 +379,39 @@ h4 a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "avalon-bold",sans-serif;
+  font-family: "avalon-bold", sans-serif;
 }
+
 .funding-container {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 5px;
-
-
 }
-
-
 
 .funding-item {
   width: 20rem;
 }
 
 .funding-item img {
-  width:60px;
+  width: 60px;
   height: 60px;
-  padding:10px 10px 20px 10px;
+  padding: 10px 10px 20px 10px;
   display: inline-block;
-  
 }
-
 
 .funding-header {
   display: flex;
-  background: linear-gradient(0deg,rgb(252, 216, 224) 55%, rgba(255,68,34,1) 55% );
-
+  background: linear-gradient(
+    0deg,
+    rgb(252, 216, 224) 55%,
+    rgba(255, 68, 34, 1) 55%
+  );
 }
 
-.funding-header  a { 
+.funding-header a {
   color: white;
-  text-decoration: none; 
+  text-decoration: none;
   font-size: 20px;
 }
 
@@ -411,21 +421,22 @@ h4 a:hover {
 }
 
 .funding-price {
-  padding-top:1rem;
+  padding-top: 1rem;
   font-size: 18px;
 }
 
 .fund-type {
-  color:black;
+  color: black;
   font-family: "shentox-medium", sans-serif;
   font-size: 12px;
-  font-weight:500;
-  opacity: .5;
+  font-weight: 500;
+  opacity: 0.5;
 }
 
-.fa-tag, .fa-briefcase {
+.fa-tag,
+.fa-briefcase {
   display: block;
-  padding:10px;
+  padding: 10px;
 }
 
 .funding-info-bottom {
@@ -433,23 +444,136 @@ h4 a:hover {
   color: #555;
   font-weight: 400;
   font-size: 14px;
-  padding-left:5px;
+  padding-left: 5px;
 }
 
 .funding-hr {
   color: orange;
   border-color: orange;
-
 }
 
 .funding-description {
-  padding:1rem;
+  padding: 1rem;
   font-family: "ars-maquette", sans-serif;
-  font-size:14px;
+  font-size: 14px;
 }
 
 .gray-desc {
-  padding:0rem 1rem 0rem 1rem;
-  font-size:12px;
+  padding: 0 1rem 0 1rem;
+  font-size: 12px;
   color: lightgray;
+}
+
+/************** CATEGORIES *******************/
+.categories {
+  display: grid;
+  width: 70%;
+  margin: 5rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 15px;
+}
+
+.cat-item h2 {
+  font: 700 25px "avalon-bold", sans-serif;
+  margin-bottom: 10px;
+}
+
+.bgd {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 14px;
+  max-width: 100%;
+  min-height: 280px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/Trump-Twitter.jpg);
+  background-size: cover;
+  color: #fff9;
+  font-family: "ars-maquette", sans-serif;
+  font-size: 12px;
+}
+
+.bgd-heading {
+  font-size: 13px;
+  font-family: "shentox-medium", sans-serif;
+  color: #fff;
+}
+
+.bgd-subheading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #fff;
+}
+
+.bgd-heading,
+.bgd-subheading {
+  text-decoration: none;
+}
+
+.bgd-heading:hover,
+.bgd-subheading:hover {
+  color: #fff;
+  text-decoration-thickness: 0.2px;
+}
+
+.latest-section {
+  display: flex;
+  height: 96px;
+  background-color: #fff4f2;
+}
+
+.latest-header {
+  flex-basis: 72%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+  color: #f42;
+  font: 700 14px/17.5px "ars-maquette", sans-serif;
+}
+
+.latest-header h3 {
+  font: 500 13px/1.5 "shentox-medium", sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.link-category {
+  flex-basis: 28%;
+  background-image: url(assets/winklevossbitcoin.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.cat-item ul {
+  list-style-type: none;
+}
+
+.category-subheading {
+  display: inline-flex;
+  border-bottom: 1px solid #eee;
+}
+
+.category-subheading a {
+  font: 13px/19.5px "ars-maquette", sans-serif;
+  color: #555;
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.category-subheading a:hover {
+  color: #000;
+}
+
+.category-subheading::before {
+  display: block;
+  content: "•";
+  color: #f42;
+  margin-right: 5px;
+  padding-top: 6px;
 }
