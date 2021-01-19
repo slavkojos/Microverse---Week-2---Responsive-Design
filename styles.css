@@ -356,3 +356,100 @@ h4 a:hover {
     flex-basis: 33.333%;
   }
 }
+
+
+
+
+/************************************************** FUNDING *************************************************************/
+.funding {
+  width: 75%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "avalon-bold",sans-serif;
+}
+.funding-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 5px;
+
+
+}
+
+
+
+.funding-item {
+  width: 20rem;
+}
+
+.funding-item img {
+  width:60px;
+  height: 60px;
+  padding:10px 10px 20px 10px;
+  display: inline-block;
+  
+}
+
+
+.funding-header {
+  display: flex;
+  background: linear-gradient(0deg,rgb(252, 216, 224) 55%, rgba(255,68,34,1) 55% );
+
+}
+
+.funding-header  a { 
+  color: white;
+  text-decoration: none; 
+  font-size: 20px;
+}
+
+.funding-info {
+  flex-basis: 70%;
+  padding-top: 1rem;
+}
+
+.funding-price {
+  padding-top:1rem;
+  font-size: 18px;
+}
+
+.fund-type {
+  color:black;
+  font-family: "shentox-medium", sans-serif;
+  font-size: 12px;
+  font-weight:500;
+  opacity: .5;
+}
+
+.fa-tag, .fa-briefcase {
+  display: block;
+  padding:10px;
+}
+
+.funding-info-bottom {
+  font-family: "ars-maquette", sans-serif;
+  color: #555;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left:5px;
+}
+
+.funding-hr {
+  color: orange;
+  border-color: orange;
+
+}
+
+.funding-description {
+  padding:1rem;
+  font-family: "ars-maquette", sans-serif;
+  font-size:14px;
+}
+
+.gray-desc {
+  padding:0rem 1rem 0rem 1rem;
+  font-size:12px;
+  color: lightgray;
+}
