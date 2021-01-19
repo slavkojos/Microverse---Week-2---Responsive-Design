@@ -134,6 +134,11 @@ header {
 /************************************************ NAV *********************************************************************/
 
 nav {
+  position: fixed;
+  box-shadow: 0 2px 2px 2px rgba(0,0,0,.2);
+  width: 99%;
+  top:0;
+  background-color: white;
   font-family: "shentox-medium", sans-serif;
   display: flex;
   justify-content: space-between;
@@ -206,6 +211,7 @@ nav > .right-align {
   font-size: 3vw;
   font-weight: 700;
   margin-bottom: 1%;
+  font-family:"avalon-bold",sans-serif;
 }
 
 .big-left > img {
@@ -377,9 +383,8 @@ h4 a:hover {
   width: 70%;
   margin: 5rem auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column; 
   align-items: center;
-<<<<<<< HEAD
   font-family: "avalon-bold", sans-serif;
 }
 
@@ -391,8 +396,6 @@ h4 a:hover {
 }
 
 .funding-item {
-  width: 20rem;
-=======
   font-family: "avalon-bold",sans-serif;
   flex-direction: column;
 }
@@ -400,6 +403,7 @@ h4 a:hover {
 .funding-title-container {
   width: 100%;
   display: flex;
+  
   justify-content: space-between;
   padding: 20px 0 20px 0;
 }
@@ -453,7 +457,6 @@ h4 a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
->>>>>>> 0ead3c42236e28f212e18ebf82eab32474cb9428
 }
 
 
@@ -535,7 +538,7 @@ h4 a:hover {
   display: grid;
   width: 70%;
   margin: 5rem auto;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 15px;
 }
 
