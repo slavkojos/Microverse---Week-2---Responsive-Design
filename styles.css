@@ -237,7 +237,7 @@ nav > .right-align {
 
 /**************** Latest News *************/
 .latest {
-  width: 75%;
+  width: 70%;
   margin: auto;
 }
 
@@ -251,13 +251,13 @@ nav > .right-align {
   text-decoration: none;
 }
 
-.latest h2::after {
+.link-latest::after, .funding-section-title::after{
   display: inline-block;
   content: "";
   height: 16px;
   width: 16px;
   margin-left: 4px;
-  background-image: url("assets/latest.svg");
+  background-image: url("assets/arrow.svg");
   background-size: 16px 16px;
 }
 
@@ -362,27 +362,75 @@ h4 a:hover {
 
 /************************************************** FUNDING *************************************************************/
 .funding {
-  width: 75%;
+  width: 70%;
   margin: 5rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "avalon-bold",sans-serif;
+  flex-direction: column;
 }
+
+.funding-title-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+
+.funding-section-title {
+  font-family: "avalon-bold",sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  color:#f42;
+  text-decoration: none;
+}
+
+.funding-title-right-links {
+  font-family:"ars-maquette",sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: none;
+  color:#f42;
+}
+
+.first-two-links::after {
+  content:"|";
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .funding-title-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .funding-title-container {
+    flex-direction: column;
+  }
+  .funding-title-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .first-two-links::after {
+    content:""
+  }
+}
+
+
+
 .funding-container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 5px;
-
-
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
 
 
-.funding-item {
-  width: 20rem;
-}
 
 .funding-item img {
   width:60px;
