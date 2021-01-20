@@ -135,9 +135,9 @@ header {
 
 nav {
   position: sticky;
-  box-shadow: 0 2px 2px 2px rgba(0,0,0,.2);
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
   width: 99%;
-  top:0;
+  top: 0;
   background-color: white;
   font-family: "shentox-medium", sans-serif;
   display: flex;
@@ -154,8 +154,6 @@ nav {
   color: #aaa;
 }
 
-
-
 .fa-search {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -163,29 +161,26 @@ nav {
   margin-left: 20px;
 }
 
-nav  .right-align {
+nav .right-align {
   display: inline-flex;
   list-style-type: none;
 }
 
 .right-align li {
-  margin:0 10px 0 10px;
+  margin: 0 10px 0 10px;
   border-left: 1px solid #aaa;
-  
 }
 
 .hamburger-menu {
   display: none;
-  color:#f42;
-  
+  color: #f42;
 }
 
 .mobile-logo {
   display: none;
   background-color: black;
-  color:white;
+  color: white;
 }
-
 
 .hover-black:hover {
   color: black;
@@ -194,17 +189,33 @@ nav  .right-align {
 @media screen and (max-width: 750px) {
   .hamburger-menu {
     display: list-item;
-    padding-left:20px;
+    padding-left: 20px;
   }
 
-  .nav-links, header {
+  .nav-links,
+  header {
     display: none;
   }
 
+  nav {
+    align-items: center;
+    padding: 0px;
+    
+  }
+
   .mobile-logo {
-    display: inline;
-    width:300%;
-    height:10%;
+    background-image: url(/assets/Tnw-logo.svg);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    width: 90px;
+    height: 10px;
+  }
+
+  .right-align li {
+    margin: 0 5px 0 5px;
+    border-left: 1px solid #aaa;
   }
   
 }
@@ -229,11 +240,10 @@ nav  .right-align {
 
 .big-left {
   grid-area: big-left;
-  background-image: linear-gradient(
-      180deg,
+  background-image:
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     linear-gradient(135deg, rgba(242, 71, 21, 0.9) 40%, rgba(0, 0, 0, 0) 75%),
     url("/assets/x-ray.webp");
   background-size: cover;
@@ -249,13 +259,13 @@ nav  .right-align {
 }
 
 .highlights-heading-container a {
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1%;
-  font-family:"avalon-bold",sans-serif;
+  font-family: "avalon-bold", sans-serif;
 }
 
-.big-left > img {
+.big-left>img {
   max-height: fit-content;
   width: 30%;
   padding: 20px 2px 5px 15px;
@@ -264,11 +274,10 @@ nav  .right-align {
 .small-top {
   justify-content: flex-end;
   grid-area: top;
-  background-image: linear-gradient(
-      180deg,
+  background-image:
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(/assets/gadget.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -278,11 +287,10 @@ nav  .right-align {
 .small-bottom {
   justify-content: flex-end;
   grid-area: bottom;
-  background-image: linear-gradient(
-      180deg,
+  background-image:
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(/assets/ev-phantom-rols-royce.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -294,8 +302,11 @@ nav  .right-align {
 }
 
 .small-highlight-heading a {
-  font-size: 2vw;
+  font-size: 26px;
 }
+
+
+
 
 /**************** Latest News *************/
 .latest {
@@ -313,7 +324,8 @@ nav  .right-align {
   text-decoration: none;
 }
 
-.link-latest::after, .funding-section-title::after{
+.link-latest::after,
+.funding-section-title::after {
   display: inline-block;
   content: "";
   height: 16px;
@@ -424,7 +436,7 @@ h4 a:hover {
   width: 70%;
   margin: 5rem auto;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   font-family: "avalon-bold", sans-serif;
 }
@@ -437,37 +449,36 @@ h4 a:hover {
 }
 
 .funding-item {
-  font-family: "avalon-bold",sans-serif;
+  font-family: "avalon-bold", sans-serif;
   flex-direction: column;
 }
 
 .funding-title-container {
   width: 100%;
   display: flex;
-  
   justify-content: space-between;
   padding: 20px 0 20px 0;
 }
 
 .funding-section-title {
-  font-family: "avalon-bold",sans-serif;
+  font-family: "avalon-bold", sans-serif;
   font-size: 28px;
   line-height: 32px;
   font-weight: 700;
-  color:#f42;
+  color: #f42;
   text-decoration: none;
 }
 
 .funding-title-right-links {
-  font-family:"ars-maquette",sans-serif;
+  font-family: "ars-maquette", sans-serif;
   font-size: 16px;
   line-height: 32px;
   text-decoration: none;
-  color:#f42;
+  color: #f42;
 }
 
 .first-two-links::after {
-  content:"|";
+  content: "|";
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -482,16 +493,16 @@ h4 a:hover {
   .funding-title-container {
     flex-direction: column;
   }
+
   .funding-title-right {
     display: flex;
     flex-direction: column;
   }
+
   .first-two-links::after {
-    content:""
+    content: "";
   }
 }
-
-
 
 .funding-container {
   width: 100%;
@@ -499,9 +510,6 @@ h4 a:hover {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
 }
-
-
-
 
 .funding-item img {
   width: 60px;
@@ -512,11 +520,10 @@ h4 a:hover {
 
 .funding-header {
   display: flex;
-  background: linear-gradient(
-    0deg,
-    rgb(252, 216, 224) 55%,
-    rgba(255, 68, 34, 1) 55%
-  );
+  background:
+    linear-gradient(0deg,
+      rgb(252, 216, 224) 55%,
+      rgba(255, 68, 34, 1) 55%);
 }
 
 .funding-header a {
@@ -595,16 +602,11 @@ h4 a:hover {
   padding: 14px;
   max-width: 100%;
   min-height: 280px;
-  background-image: linear-gradient(
-      180deg,
-      rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url(assets/Trump-Twitter.jpg);
   background-size: cover;
   color: #fff9;
   font-family: "ars-maquette", sans-serif;
   font-size: 12px;
+  margin-bottom:3px;
 }
 
 .bgd-heading {
@@ -687,3 +689,121 @@ h4 a:hover {
   margin-right: 5px;
   padding-top: 6px;
 }
+
+.cat-bgd1 {
+  background-image:
+    linear-gradient(180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%),
+    url(assets/Trump-Twitter.jpg);
+}
+
+.cat-bgd2 {
+  background-image:
+    linear-gradient(180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%),
+    url(assets/trump2.jpg);
+}
+
+.cat-bgd3 {
+  background-image:
+    linear-gradient(180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%),
+    url(assets/trump3.jpg);
+}
+
+.cat-bgd4 {
+  background-image:
+    linear-gradient(180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%),
+    url(assets/trump4.jpg);
+}
+
+.cat-bgd5 {
+  background-image:
+    linear-gradient(180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%),
+    url(assets/trump5.jpg);
+}
+
+.cat-bgd6 {
+  background-image:
+    linear-gradient(180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%),
+    url(assets/trump6.jpg);
+}
+
+.cat-bgd7 {
+  background-image:
+    linear-gradient(180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%),
+    url(assets/trump7.jpg);
+}
+
+.cat-bgd8 {
+  background-image:
+    linear-gradient(180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%),
+    url(assets/trump8.jpg);
+}
+
+.cat-bgd9 {
+  background-image:
+    linear-gradient(180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%),
+    url(assets/trump9.jpg);
+}
+
+.small-bgd1 {
+  background-image:url(/assets/trump_small1.jpg)
+}
+
+.small-bgd2 {
+  background-image:url(/assets/trump_small2.jpg)
+}
+
+.small-bgd3 {
+  background-image:url(/assets/trump_small3.jpg)
+}
+
+.small-bgd4 {
+  background-image:url(/assets/trump_small4.jpg)
+}
+
+.small-bgd5 {
+  background-image:url(/assets/trump_small5.jpg)
+}
+
+.small-bgd6 {
+  background-image:url(/assets/trump_small6.jpg)
+}
+
+.small-bgd7 {
+  background-image:url(/assets/trump_small7.jpg)
+}
+
+.small-bgd8 {
+  background-image:url(/assets/trump_small8.jpg)
+}
+
+.small-bgd9 {
+  background-image:url(/assets/trump_small9.jpg)
+}
+
+
+
+
+
+
+
+
+
+
