@@ -164,6 +164,7 @@ nav {
 nav .right-align {
   display: inline-flex;
   list-style-type: none;
+  
 }
 
 .right-align li {
@@ -300,10 +301,37 @@ nav .right-align {
 .highlights-heading-container {
   height: max-content;
 }
+.highlights-heading-container p {
+  color:hsla(0,0%,100%,.6);
+}
+
+.highlights-heading-container > a {
+  padding-bottom: 20px;
+}
+.highlights-heading-container p  i {
+  padding:0px 5px 0px 5px;
+}
 
 .small-highlight-heading a {
   font-size: 26px;
 }
+
+
+@media screen and (max-width: 1000px) {
+.big-left {
+  background-image:
+    linear-gradient(180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%),
+    url("/assets/x-ray.webp");
+}
+.big-left img {
+  visibility:hidden;
+}
+
+}
+
+
 
 
 
