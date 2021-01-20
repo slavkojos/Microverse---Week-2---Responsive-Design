@@ -522,7 +522,7 @@ h4 a:hover {
   display: flex;
   background:
     linear-gradient(0deg,
-      rgb(252, 216, 224) 55%,
+      rgb( 	255, 244, 242) 55%,
       rgba(255, 68, 34, 1) 55%);
 }
 
@@ -667,6 +667,7 @@ h4 a:hover {
 }
 
 .category-subheading {
+  width: 100%;
   display: inline-flex;
   border-bottom: 1px solid #eee;
 }
@@ -802,7 +803,7 @@ h4 a:hover {
 
 .social {
   height:200px;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   background-color: #131313;
   display: flex;
   flex-direction: column;
@@ -852,6 +853,34 @@ h4 a:hover {
 
 .social-networks li:hover {
   background-color: black;
+}
+
+
+/********************************************** FOOTER *********************************************/
+
+footer {
+  margin: 0 auto;
+  background-color: #000;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#aaa;
+}
+footer p {
+  width: 80%;
+  text-align: center;
+  
+}
+
+footer img {
+  width: 40px;
+  padding-right: 5px;
+
+}
+
+.stackpath {
+  width:70px;
 }
 
 
