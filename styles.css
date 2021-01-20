@@ -204,7 +204,7 @@ nav .right-align {
   }
 
   .mobile-logo {
-    background-image: url(/assets/Tnw-logo.svg);
+    background-image: url(assets/Tnw-logo.svg);
     background-position: center;
     background-size: 70%;
     background-repeat: no-repeat;
@@ -242,7 +242,7 @@ nav .right-align {
       rgba(0, 0, 0, 1) 100%
     ),
     linear-gradient(135deg, rgba(242, 71, 21, 0.9) 40%, rgba(0, 0, 0, 0) 75%),
-    url("/assets/x-ray.webp");
+    url("assets/x-ray.webp");
   background-size: cover;
   background-position: 50%;
 }
@@ -278,7 +278,7 @@ nav .right-align {
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url(/assets/gadget.jpg);
+    url(assets/gadget.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -292,7 +292,7 @@ nav .right-align {
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url(/assets/ev-phantom-rols-royce.jpg);
+    url(assets/ev-phantom-rols-royce.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -325,7 +325,7 @@ nav .right-align {
         rgba(236, 143, 27, 0) 0%,
         rgba(0, 0, 0, 1) 100%
       ),
-      url("/assets/x-ray.webp");
+      url("assets/x-ray.webp");
   }
 
   .big-left img {
@@ -797,39 +797,39 @@ h4 a:hover {
 }
 
 .small-bgd1 {
-  background-image: url(/assets/trump_small1.jpg);
+  background-image: url(assets/trump_small1.jpg);
 }
 
 .small-bgd2 {
-  background-image: url(/assets/trump_small2.jpg);
+  background-image: url(assets/trump_small2.jpg);
 }
 
 .small-bgd3 {
-  background-image: url(/assets/trump_small3.jpg);
+  background-image: url(assets/trump_small3.jpg);
 }
 
 .small-bgd4 {
-  background-image: url(/assets/trump_small4.jpg);
+  background-image: url(assets/trump_small4.jpg);
 }
 
 .small-bgd5 {
-  background-image: url(/assets/trump_small5.jpg);
+  background-image: url(assets/trump_small5.jpg);
 }
 
 .small-bgd6 {
-  background-image: url(/assets/trump_small6.jpg);
+  background-image: url(assets/trump_small6.jpg);
 }
 
 .small-bgd7 {
-  background-image: url(/assets/trump_small7.jpg);
+  background-image: url(assets/trump_small7.jpg);
 }
 
 .small-bgd8 {
-  background-image: url(/assets/trump_small8.jpg);
+  background-image: url(assets/trump_small8.jpg);
 }
 
 .small-bgd9 {
-  background-image: url(/assets/trump_small9.jpg);
+  background-image: url(assets/trump_small9.jpg);
 }
 
 /********************************************** SOCIAL SECTION ****************************************************************************/
