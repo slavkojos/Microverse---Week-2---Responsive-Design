@@ -615,7 +615,7 @@ h4 a:hover {
   display: grid;
   width: 70%;
   margin: 5rem auto;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 410px));
   grid-gap: 15px;
 }
 
