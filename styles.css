@@ -264,6 +264,8 @@ nav .right-align {
   font-weight: 700;
   margin-bottom: 1%;
   font-family: "avalon-bold", sans-serif;
+  text-decoration: none;
+  color: white;
 }
 
 .big-left>img {
