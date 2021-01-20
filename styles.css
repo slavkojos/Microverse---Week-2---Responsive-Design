@@ -154,6 +154,8 @@ nav {
   color: #aaa;
 }
 
+
+
 .fa-search {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -161,15 +163,54 @@ nav {
   margin-left: 20px;
 }
 
-nav > .right-align {
-  border-left-style: solid;
-  border-color: #aaa;
-  border-width: 1px;
+nav  .right-align {
+  display: inline-flex;
+  list-style-type: none;
 }
+
+.right-align li {
+  margin:0 10px 0 10px;
+  border-left: 1px solid #aaa;
+  
+}
+
+.hamburger-menu {
+  display: none;
+  color:#f42;
+  
+}
+
+.mobile-logo {
+  display: none;
+  background-color: black;
+  color:white;
+}
+
 
 .hover-black:hover {
   color: black;
 }
+
+@media screen and (max-width: 750px) {
+  .hamburger-menu {
+    display: list-item;
+    padding-left:20px;
+  }
+
+  .nav-links, header {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: inline;
+    width:300%;
+    height:10%;
+  }
+  
+}
+
+
+
 
 /******************************************* HIGHLIGHTS **************************************************************/
 
