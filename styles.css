@@ -472,8 +472,9 @@ h4 a:hover {
 .funding-container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 280px));
+  grid-gap: 10px;
+  justify-content: space-between;
 }
 
 .funding-item {
@@ -530,13 +531,6 @@ h4 a:hover {
   .first-two-links::after {
     content: "";
   }
-}
-
-.funding-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
 }
 
 .funding-item img {
@@ -617,6 +611,7 @@ h4 a:hover {
   margin: 5rem auto;
   grid-template-columns: repeat(auto-fit, minmax(220px, 410px));
   grid-gap: 15px;
+  justify-content: center;
 }
 
 .cat-item h2 {
