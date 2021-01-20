@@ -798,6 +798,62 @@ h4 a:hover {
   background-image:url(/assets/trump_small9.jpg)
 }
 
+/********************************************** SOCIAL SECTION ****************************************************************************/
+
+.social {
+  height:200px;
+  margin: 20px auto;
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.social-row {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.social-row li {
+  margin:0px 5px 0 5px;
+  
+}
+
+.social-networks li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  cursor: pointer;
+  border: 2px solid #333;
+  
+}
+
+.social-links {
+  font-family: "shenton-medium", sans-serif;
+  
+}
+
+.social-links a {
+  text-decoration: none;
+  color:#aaa;
+  font-size: 13px;
+}
+
+.social-links a:hover {
+  color: white;
+}
+
+.social-networks li:hover {
+  background-color: black;
+}
+
 
 
 
