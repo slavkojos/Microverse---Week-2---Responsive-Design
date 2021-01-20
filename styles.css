@@ -143,6 +143,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 10px 20px 10px;
+  z-index: 1;
 }
 
 .nav-links {
@@ -164,7 +165,6 @@ nav {
 nav .right-align {
   display: inline-flex;
   list-style-type: none;
-  
 }
 
 .right-align li {
@@ -200,8 +200,7 @@ nav .right-align {
 
   nav {
     align-items: center;
-    padding: 0px;
-    
+    padding: 0;
   }
 
   .mobile-logo {
@@ -218,11 +217,7 @@ nav .right-align {
     margin: 0 5px 0 5px;
     border-left: 1px solid #aaa;
   }
-  
 }
-
-
-
 
 /******************************************* HIGHLIGHTS **************************************************************/
 
@@ -241,10 +236,11 @@ nav .right-align {
 
 .big-left {
   grid-area: big-left;
-  background-image:
-    linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 1) 100%
+    ),
     linear-gradient(135deg, rgba(242, 71, 21, 0.9) 40%, rgba(0, 0, 0, 0) 75%),
     url("/assets/x-ray.webp");
   background-size: cover;
@@ -268,7 +264,7 @@ nav .right-align {
   color: white;
 }
 
-.big-left>img {
+.big-left > img {
   max-height: fit-content;
   width: 30%;
   padding: 20px 2px 5px 15px;
@@ -277,10 +273,11 @@ nav .right-align {
 .small-top {
   justify-content: flex-end;
   grid-area: top;
-  background-image:
-    linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 1) 100%
+    ),
     url(/assets/gadget.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -290,10 +287,11 @@ nav .right-align {
 .small-bottom {
   justify-content: flex-end;
   grid-area: bottom;
-  background-image:
-    linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 1) 100%
+    ),
     url(/assets/ev-phantom-rols-royce.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -303,40 +301,37 @@ nav .right-align {
 .highlights-heading-container {
   height: max-content;
 }
+
 .highlights-heading-container p {
-  color:hsla(0,0%,100%,.6);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 .highlights-heading-container > a {
   padding-bottom: 20px;
 }
-.highlights-heading-container p  i {
-  padding:0px 5px 0px 5px;
+
+.highlights-heading-container p i {
+  padding: 0 5px 0 5px;
 }
 
 .small-highlight-heading a {
   font-size: 26px;
 }
 
-
 @media screen and (max-width: 1000px) {
-.big-left {
-  background-image:
-    linear-gradient(180deg,
-      rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
-    url("/assets/x-ray.webp");
+  .big-left {
+    background-image: linear-gradient(
+        180deg,
+        rgba(236, 143, 27, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("/assets/x-ray.webp");
+  }
+
+  .big-left img {
+    visibility: hidden;
+  }
 }
-.big-left img {
-  visibility:hidden;
-}
-
-}
-
-
-
-
-
 
 /**************** Latest News *************/
 .latest {
@@ -344,7 +339,8 @@ nav .right-align {
   margin: auto;
 }
 
-.latest h2 {
+.latest h2,
+.deals-header {
   font: 700 25px "avalon-bold", sans-serif;
   margin-bottom: 20px;
 }
@@ -365,7 +361,8 @@ nav .right-align {
   background-size: 16px 16px;
 }
 
-.news-wrapper {
+.news-wrapper,
+.deals-wrapper {
   display: flex;
   flex-flow: row wrap;
   flex: 1 1 100%;
@@ -397,7 +394,8 @@ h4 a:hover {
   text-decoration: underline;
 }
 
-.story p {
+.story p,
+.sale {
   font: 12px/18px "ars-maquette", sans-serif;
   color: #aaa;
 }
@@ -432,7 +430,8 @@ h4 a:hover {
     width: 99%;
   }
 
-  .news-wrapper {
+  .news-wrapper,
+  .deals-wrapper {
     display: flex;
     flex-direction: column;
   }
@@ -456,7 +455,8 @@ h4 a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-  .news {
+  .news,
+  .deal {
     flex-basis: 33.333%;
   }
 }
@@ -550,10 +550,11 @@ h4 a:hover {
 
 .funding-header {
   display: flex;
-  background:
-    linear-gradient(0deg,
-      rgb( 	255, 244, 242) 55%,
-      rgba(255, 68, 34, 1) 55%);
+  background: linear-gradient(
+    0deg,
+    rgb(255, 244, 242) 55%,
+    rgba(255, 68, 34, 1) 55%
+  );
 }
 
 .funding-header a {
@@ -636,7 +637,7 @@ h4 a:hover {
   color: #fff9;
   font-family: "ars-maquette", sans-serif;
   font-size: 12px;
-  margin-bottom:3px;
+  margin-bottom: 3px;
 }
 
 .bgd-heading {
@@ -722,117 +723,126 @@ h4 a:hover {
 }
 
 .cat-bgd1 {
-  background-image:
-    linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 1) 100%
+    ),
     url(assets/Trump-Twitter.jpg);
 }
 
 .cat-bgd2 {
-  background-image:
-    linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 1) 100%
+    ),
     url(assets/trump2.jpg);
 }
 
 .cat-bgd3 {
-  background-image:
-    linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 1) 100%
+    ),
     url(assets/trump3.jpg);
 }
 
 .cat-bgd4 {
-  background-image:
-    linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 1) 100%
+    ),
     url(assets/trump4.jpg);
 }
 
 .cat-bgd5 {
-  background-image:
-    linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 1) 100%
+    ),
     url(assets/trump5.jpg);
 }
 
 .cat-bgd6 {
-  background-image:
-    linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 1) 100%
+    ),
     url(assets/trump6.jpg);
 }
 
 .cat-bgd7 {
-  background-image:
-    linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 1) 100%
+    ),
     url(assets/trump7.jpg);
 }
 
 .cat-bgd8 {
-  background-image:
-    linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 1) 100%
+    ),
     url(assets/trump8.jpg);
 }
 
 .cat-bgd9 {
-  background-image:
-    linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 1) 100%
+    ),
     url(assets/trump9.jpg);
 }
 
 .small-bgd1 {
-  background-image:url(/assets/trump_small1.jpg)
+  background-image: url(/assets/trump_small1.jpg);
 }
 
 .small-bgd2 {
-  background-image:url(/assets/trump_small2.jpg)
+  background-image: url(/assets/trump_small2.jpg);
 }
 
 .small-bgd3 {
-  background-image:url(/assets/trump_small3.jpg)
+  background-image: url(/assets/trump_small3.jpg);
 }
 
 .small-bgd4 {
-  background-image:url(/assets/trump_small4.jpg)
+  background-image: url(/assets/trump_small4.jpg);
 }
 
 .small-bgd5 {
-  background-image:url(/assets/trump_small5.jpg)
+  background-image: url(/assets/trump_small5.jpg);
 }
 
 .small-bgd6 {
-  background-image:url(/assets/trump_small6.jpg)
+  background-image: url(/assets/trump_small6.jpg);
 }
 
 .small-bgd7 {
-  background-image:url(/assets/trump_small7.jpg)
+  background-image: url(/assets/trump_small7.jpg);
 }
 
 .small-bgd8 {
-  background-image:url(/assets/trump_small8.jpg)
+  background-image: url(/assets/trump_small8.jpg);
 }
 
 .small-bgd9 {
-  background-image:url(/assets/trump_small9.jpg)
+  background-image: url(/assets/trump_small9.jpg);
 }
 
 /********************************************** SOCIAL SECTION ****************************************************************************/
 
 .social {
-  height:200px;
+  height: 200px;
   margin: 20px auto 0 auto;
   background-color: #131313;
   display: flex;
@@ -849,31 +859,28 @@ h4 a:hover {
 }
 
 .social-row li {
-  margin:0px 5px 0 5px;
-  
+  margin: 0 5px 0 5px;
 }
 
 .social-networks li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px; 
+  width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #333;
   cursor: pointer;
   border: 2px solid #333;
-  
 }
 
 .social-links {
   font-family: "shenton-medium", sans-serif;
-  
 }
 
 .social-links a {
   text-decoration: none;
-  color:#aaa;
+  color: #aaa;
   font-size: 13px;
 }
 
@@ -885,6 +892,72 @@ h4 a:hover {
   background-color: black;
 }
 
+/********************************************** LATEST DEALS  **************************************/
+.latest-deals {
+  width: 75%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  width: calc(100% - 30px);
+  justify-content: space-between;
+}
+
+.all-deals {
+  padding-top: 10px;
+  font: 16px "ars-maquette", sans-serif;
+  text-decoration: none;
+  color: #f42;
+}
+
+.deal {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  max-width: 250px;
+  min-height: 250px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.deal-cover {
+  flex-basis: 67%;
+  min-width: 230px;
+  min-height: 200px;
+  text-align: end;
+  background-image: url(assets/logic-pro.jpg);
+  background-size: cover;
+}
+
+.bargain {
+  font: 600 16px "ars-maquette", sans-serif;
+  color: #555;
+}
+
+.ribbon {
+  max-width: 5em;
+}
+
+.voucher {
+  display: inline-block;
+  font: 700 14px/17.5px "ars-maquette", sans-serif;
+  width: 80px;
+  min-height: 80px;
+  background-image: url(assets/deals-ribbon.svg);
+  background-size: cover;
+}
+
+.discount {
+  position: relative;
+  top: 15px;
+  transform: rotate(45deg);
+}
+
+.sale {
+  margin-right: 5px;
+  text-decoration: line-through;
+}
 
 /********************************************** FOOTER *********************************************/
 
@@ -895,30 +968,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#aaa;
+  color: #aaa;
 }
+
 footer p {
   width: 80%;
   text-align: center;
-  
 }
 
 footer img {
   width: 40px;
   padding-right: 5px;
-
 }
 
 .stackpath {
-  width:70px;
+  width: 70px;
 }
-
-
-
-
-
-
-
-
-
-
