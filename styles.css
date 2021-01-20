@@ -430,8 +430,7 @@ h4 a:hover {
     width: 99%;
   }
 
-  .news-wrapper,
-  .deals-wrapper {
+  .news-wrapper {
     display: flex;
     flex-direction: column;
   }
@@ -455,8 +454,7 @@ h4 a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-  .news,
-  .deal {
+  .news {
     flex-basis: 33.333%;
   }
 }
@@ -891,74 +889,6 @@ h4 a:hover {
 .social-networks li:hover {
   background-color: black;
 }
-
-/********************************************** LATEST DEALS  **************************************/
-.latest-deals {
-  width: 75%;
-  margin: auto;
-}
-
-.header {
-  display: flex;
-  width: calc(100% - 30px);
-  justify-content: space-between;
-}
-
-.all-deals {
-  padding-top: 10px;
-  font: 16px "ars-maquette", sans-serif;
-  text-decoration: none;
-  color: #f42;
-}
-
-.deal {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 25%;
-  max-width: 250px;
-  min-height: 250px;
-  padding: 10px;
-  margin-right: 5px;
-}
-
-.deal-cover {
-  flex-basis: 67%;
-  min-width: 230px;
-  min-height: 200px;
-  text-align: end;
-  background-image: url(assets/logic-pro.jpg);
-  background-size: cover;
-}
-
-.bargain {
-  font: 600 16px "ars-maquette", sans-serif;
-  color: #555;
-}
-
-.ribbon {
-  max-width: 5em;
-}
-
-.voucher {
-  display: inline-block;
-  font: 700 14px/17.5px "ars-maquette", sans-serif;
-  width: 80px;
-  min-height: 80px;
-  background-image: url(assets/deals-ribbon.svg);
-  background-size: cover;
-}
-
-.discount {
-  position: relative;
-  top: 15px;
-  transform: rotate(45deg);
-}
-
-.sale {
-  margin-right: 5px;
-  text-decoration: line-through;
-}
-
 /********************************************** FOOTER *********************************************/
 
 footer {
