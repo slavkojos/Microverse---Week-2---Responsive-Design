@@ -539,11 +539,17 @@ nav .right-align {
   .funding-title-container {
     flex-direction: column;
   }
+  .funding-last {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .funding-title-container {
     flex-direction: column;
+  }
+  .funding-last {
+    display: none;
   }
 
   .funding-title-right {
