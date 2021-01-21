@@ -105,10 +105,9 @@ video {
 
 /************************************************** HEADER *********************************************************/
 
-.black-nav {
+header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-family: "ars-maquette", sans-serif;
   background-color: rgb(14, 15, 16);
   padding: 10px 20px 10px 20px;
@@ -132,22 +131,8 @@ video {
 }
 
 /************************************************ NAV *********************************************************************/
-.mobile-logo, .tablet-logo {
-  display: none;
-  background-color: black;
-  color: white;
-  background-image: url(assets/Tnw-logo.svg);
-  background-position: center;
-  background-size: 70%;
-  background-repeat: no-repeat;
-  width: 90px;
-  height: 10px;
-}
+
 nav {
-  display: flex;
-  flex-direction: column;
-}
-.white-nav {
   position: sticky;
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
   width: 99%;
@@ -191,50 +176,40 @@ nav .right-align {
   color: #f42;
 }
 
-
+.mobile-logo {
+  display: none;
+  background-color: black;
+  color: white;
+}
 
 .hover-black:hover {
   color: black;
 }
 
-@media screen and (max-width: 1024px) {
-  .tablet-logo {
-    display: inline-flex;
-    grid-row: 1/span 2;
-    width: 120px;
-    height: 78px;
-  }
-  nav {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 9fr;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  nav {
-    display: flex;
-  }
-  .tablet-logo {
-    display: none;
-  }
   .hamburger-menu {
     display: list-item;
     padding-left: 20px;
   }
 
   .nav-links,
-  .black-nav {
+  header {
     display: none;
   }
 
-  .white-nav {
+  nav {
     align-items: center;
     padding: 0;
   }
 
   .mobile-logo {
+    background-image: url(assets/Tnw-logo.svg);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
     display: inline-flex;
+    width: 90px;
+    height: 10px;
   }
 
   .right-align li {
