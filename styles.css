@@ -142,7 +142,7 @@ nav {
   align-items: center;
   position: sticky;
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
-  width: 99%;
+  width: 100%;
   top: 0;
   background-color: white;
   font-family: "shentox-medium", sans-serif;
@@ -173,8 +173,12 @@ nav .right-align {
 }
 
 .right-align li {
-  margin: 0 10px 0 10px;
+  margin: 0 10px 0;
   border-left: 1px solid #aaa;
+}
+
+.nav-buttons {
+  margin-right:20px;
 }
 
 .hamburger-menu {
@@ -191,7 +195,7 @@ nav .right-align {
   background-size: 70%;
   background-repeat: no-repeat;
   width: 90px;
-  height: 20px;
+  height: 60px;
 }
 
 .hover-black:hover {
@@ -350,7 +354,7 @@ nav .right-align {
 @media screen and (max-width: 768px) {
   #highlights {
     display: grid;
-    height: 1000px;
+    height: 900px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
@@ -394,12 +398,18 @@ nav .right-align {
 }
 
 @media screen and (max-width: 1024px) {
+  .funding {
+    width: 90%;
+  }
   .funding-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 768px) {
+  .funding {
+    width: 90%;
+  }
   .funding-container {
     grid-template-columns: 1fr;
   }
@@ -470,18 +480,19 @@ nav .right-align {
 }
 
 .funding-item img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   padding: 10px 10px 20px 10px;
   display: inline-block;
 }
 
 .funding-header {
-  background: linear-gradient(
-    0deg,
-    rgb(255, 244, 242) 55%,
-    rgba(255, 68, 34, 1) 55%
-  );
+  background:
+    linear-gradient(
+      0deg,
+      rgb(250, 230, 226) 55%,
+      rgba(255, 68, 34, 1) 55%
+    );
 }
 
 .funding-name {
@@ -553,14 +564,16 @@ nav .right-align {
 
 @media screen and (max-width: 1024px) {
   .categories {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  width: 90%;
+  grid-template-columns: repeat(2,1fr);
+}
 }
 
 @media screen and (max-width: 768px) {
   .categories {
-    grid-template-columns: 1fr;
-  }
+  width: 90%;
+  grid-template-columns: 1fr;
+}
 }
 
 .cat-item h2 {
@@ -1052,6 +1065,8 @@ footer {
   height: 100px;
   justify-content: center;
   align-items: center;
+  font-family: "ars-maquette", sans-serif;
+  font-size: 13px;
   color: #aaa;
 }
 
