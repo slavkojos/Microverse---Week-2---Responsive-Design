@@ -10,7 +10,7 @@ We believe that media queries should be avoided where it is possible to do so. U
 the desired layout without media queries and in addition it helps to save time, clutter and precious repeated lines of code.
 
 
-![screenshot](./screenshot.png)
+![screenshot](./screenshot.PNG)
 
 Website to replicate:
 
