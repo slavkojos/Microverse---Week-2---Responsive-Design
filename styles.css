@@ -178,7 +178,7 @@ nav .right-align {
 }
 
 .nav-buttons {
-  margin-right:20px;
+  margin-right: 20px;
 }
 
 .hamburger-menu {
@@ -255,7 +255,8 @@ nav .right-align {
 
 .big-left {
   grid-area: big-left;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
@@ -291,7 +292,8 @@ nav .right-align {
 .small-top {
   justify-content: flex-end;
   grid-area: top;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
@@ -305,7 +307,8 @@ nav .right-align {
 .small-bottom {
   justify-content: flex-end;
   grid-area: bottom;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
@@ -338,7 +341,8 @@ nav .right-align {
 
 @media screen and (max-width: 1024px) {
   .big-left {
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         180deg,
         rgba(236, 143, 27, 0) 0%,
         rgba(0, 0, 0, 1) 100%
@@ -401,6 +405,7 @@ nav .right-align {
   .funding {
     width: 90%;
   }
+
   .funding-container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -410,6 +415,7 @@ nav .right-align {
   .funding {
     width: 90%;
   }
+
   .funding-container {
     grid-template-columns: 1fr;
   }
@@ -564,16 +570,16 @@ nav .right-align {
 
 @media screen and (max-width: 1024px) {
   .categories {
-  width: 90%;
-  grid-template-columns: repeat(2,1fr);
-}
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
   .categories {
-  width: 90%;
-  grid-template-columns: 1fr;
-}
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
 }
 
 .cat-item h2 {
@@ -675,7 +681,8 @@ nav .right-align {
 }
 
 .cat-bgd1 {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
@@ -684,7 +691,8 @@ nav .right-align {
 }
 
 .cat-bgd2 {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
@@ -693,7 +701,8 @@ nav .right-align {
 }
 
 .cat-bgd3 {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
@@ -702,7 +711,8 @@ nav .right-align {
 }
 
 .cat-bgd4 {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
@@ -711,7 +721,8 @@ nav .right-align {
 }
 
 .cat-bgd5 {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
@@ -720,7 +731,8 @@ nav .right-align {
 }
 
 .cat-bgd6 {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
@@ -729,7 +741,8 @@ nav .right-align {
 }
 
 .cat-bgd7 {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
@@ -738,7 +751,8 @@ nav .right-align {
 }
 
 .cat-bgd8 {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
@@ -747,7 +761,8 @@ nav .right-align {
 }
 
 .cat-bgd9 {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(236, 143, 27, 0) 0%,
       rgba(0, 0, 0, 1) 100%
@@ -847,6 +862,7 @@ nav .right-align {
 }
 
 .story {
+  flex-direction: column;
   font: 700 16px/1.5 "ars-maquette", sans-serif;
   color: #000;
   text-decoration: none;
@@ -860,10 +876,6 @@ nav .right-align {
 .small-text {
   font: 12px/18px "ars-maquette", sans-serif;
   color: #aaa;
-}
-
-.items-wrapper {
-  flex-direction: column;
 }
 
 .news-tile {
@@ -915,11 +927,6 @@ nav .right-align {
   flex-basis: 65%;
 }
 
-.story {
-  display: flex;
-  flex-direction: column;
-}
-
 @media screen and (max-width: 768px) {
   .latest-deals,
   .latest-news {
@@ -964,12 +971,6 @@ nav .right-align {
   justify-content: space-between;
 }
 
-.items-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  list-style-type: none;
-}
-
 .deals-header h2 {
   font: 700 28px "avalon-bold", sans-serif;
   margin-bottom: 10px;
@@ -994,7 +995,7 @@ nav .right-align {
   font-family: "ars-maquette", sans-serif;
 }
 
-.headline a {
+.deal-description {
   font: 700 14px/18px "ars-maquette", sans-serif;
   color: #000;
   text-decoration: none;
@@ -1043,13 +1044,13 @@ nav .right-align {
   font-family: "shenton-medium", sans-serif;
 }
 
-.social-links a {
+.about-links {
   text-decoration: none;
   color: #aaa;
   font-size: 13px;
 }
 
-.social-links a:hover {
+.about-links:hover {
   color: white;
 }
 
@@ -1070,12 +1071,12 @@ footer {
   color: #aaa;
 }
 
-footer p {
+.footer-line {
   width: 80%;
   text-align: center;
 }
 
-footer img {
+.footer-image {
   width: 40px;
   padding-right: 5px;
 }
