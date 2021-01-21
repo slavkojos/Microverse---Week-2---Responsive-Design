@@ -186,7 +186,7 @@ nav .right-align {
   color: black;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .hamburger-menu {
     display: list-item;
     padding-left: 20px;
@@ -403,7 +403,7 @@ nav .right-align {
   color: #aaa;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   #highlights {
     display: grid;
     height: 1000px;
@@ -456,7 +456,7 @@ nav .right-align {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .news {
     flex-basis: 33.333%;
   }
@@ -529,13 +529,13 @@ nav .right-align {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .funding-title-container {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .funding-title-container {
     flex-direction: column;
   }
