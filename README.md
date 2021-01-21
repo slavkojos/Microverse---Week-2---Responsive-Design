@@ -9,6 +9,9 @@ the tablet and mobile layout. Where css-grid could not do the job we used media 
 We believe that media queries should be avoided where it is possible to do so. Using CSS Grid and flexbox can massively help to achieve
 the desired layout without media queries and in addition it helps to save time, clutter and precious repeated lines of code.
 
+
+![screenshot](./screenshot.png)
+
 Website to replicate:
 
 https://thenextweb.com/
@@ -18,9 +21,9 @@ Built With:
 HTML
 CSS
 
-Live Demo
+## Live Demo
 
-***Placeholder***
+https://slavkojos.github.io/Microverse---Week-2---Responsive-Design/
 
 👤 Authors:
 
@@ -37,12 +40,6 @@ Feel free to check the [issues page](issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
