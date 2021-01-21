@@ -284,7 +284,6 @@ nav .right-align {
 }
 
 .big-left > img {
-  max-height: fit-content;
   width: 30%;
   padding: 20px 2px 5px 15px;
 }
