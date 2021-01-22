@@ -1,0 +1,1078 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/************************************************** FONTS  *********************************************************/
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: ars-maquette;
+  src: url(fonts/ars-maquette-regular.woff);
+}
+
+@font-face {
+  font-family: avalon-bold;
+  src: url(fonts/avalon-bold.woff);
+}
+
+@font-face {
+  font-family: shenton-medium;
+  src: url(fonts/shentox-medium.woff2);
+}
+
+.flex {
+  display: flex;
+}
+
+/************************************************** HEADER *********************************************************/
+
+header {
+  justify-content: space-between;
+  font-family: "ars-maquette", sans-serif;
+  background-color: rgb(14, 15, 16);
+  padding: 10px 20px 10px 20px;
+}
+
+.header-links {
+  padding: 3px;
+  width: 50%;
+  color: rgba(232, 230, 227, 0.6);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.first-link {
+  color: white;
+}
+
+.hover-white:hover {
+  color: white;
+}
+
+/************************************************ NAV *********************************************************************/
+
+nav {
+  align-items: stretch;
+  position: sticky;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 50px;
+  top: 0;
+  background-color: white;
+  font-family: "shentox-medium", sans-serif;
+  justify-content: space-between;
+  padding: 0 0 0 10px;
+  z-index: 1;
+}
+
+.nav-items {
+  align-items: center;
+}
+
+.nav-links {
+  text-decoration: none;
+  padding: 1px 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  color: #aaa;
+}
+
+.fa-search {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  color: #aaa;
+}
+
+.nav-buttons {
+  justify-content: center;
+  align-items: stretch;
+}
+
+.fa-search,
+.fa-bars {
+  border-right: 1px solid #ededed;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.hamburger-menu {
+  display: none;
+  color: #f42;
+}
+
+.mobile-logo {
+  display: none;
+  background-color: black;
+  color: white;
+  background-image: url(assets/Tnw-logo.svg);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 50px;
+}
+
+.hover-black:hover {
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 0;
+  }
+
+  .mobile-logo {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links,
+  .black-header {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    border-left: 1px solid #ededed;
+  }
+}
+
+/******************************************* HIGHLIGHTS **************************************************************/
+
+#highlights {
+  display: grid;
+  height: 560px;
+  margin: 1%;
+  grid-template-columns: 2.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "big-left top"
+    "big-left bottom";
+  grid-gap: 10px;
+  color: white;
+}
+
+.big-left {
+  grid-area: big-left;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    linear-gradient(135deg, rgba(242, 71, 21, 0.9) 40%, rgba(0, 0, 0, 0) 75%),
+    url("assets/x-ray.webp");
+  background-size: cover;
+  background-position: 50%;
+}
+
+.highlights-item {
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.highlights-heading-container a {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1%;
+  font-family: "avalon-bold", sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.big-left > img {
+  width: 30%;
+  padding: 20px 2px 5px 15px;
+}
+
+.small-top {
+  justify-content: flex-end;
+  grid-area: top;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/gadget.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.small-bottom {
+  justify-content: flex-end;
+  grid-area: bottom;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/ev-phantom-rols-royce.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.highlights-heading-container {
+  height: max-content;
+}
+
+.highlights-heading-container p {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.highlights-heading-container > a {
+  padding-bottom: 20px;
+}
+
+.highlights-heading-container p i {
+  padding: 0 5px 0 5px;
+}
+
+.small-highlight-heading a {
+  font-size: 26px;
+}
+
+@media screen and (max-width: 1024px) {
+  .big-left {
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(236, 143, 27, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("assets/x-ray.webp");
+  }
+
+  .big-left img {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #highlights {
+    display: grid;
+    height: 900px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "big-left"
+      "top"
+      "bottom";
+  }
+
+  .highlights-item {
+    height: 285px;
+  }
+
+  .highlights-heading-container {
+    height: max-content;
+  }
+
+  .highlights-heading-container a {
+    font-size: 4vw;
+    font-weight: 700;
+    margin-bottom: 1%;
+  }
+}
+
+/************************************************** FUNDING *************************************************************/
+.funding {
+  width: 70%;
+  margin: 5rem auto;
+  flex-direction: column;
+  align-items: center;
+  font-family: "avalon-bold", sans-serif;
+}
+
+.funding-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 280px)); */
+  grid-gap: 10px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  .funding {
+    width: 90%;
+  }
+
+  .funding-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .funding {
+    width: 90%;
+  }
+
+  .funding-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.funding-item {
+  font-family: "avalon-bold", sans-serif;
+  flex-direction: column;
+}
+
+.funding-title-container {
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+
+.funding-section-title {
+  font-family: "avalon-bold", sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #f42;
+  text-decoration: none;
+}
+
+.funding-title-right-links,
+.link-deals {
+  font-family: "ars-maquette", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #f42;
+}
+
+.first-two-links::after {
+  content: "|";
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .funding-title-container {
+    flex-direction: column;
+  }
+
+  .funding-last {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .funding-title-container {
+    flex-direction: column;
+  }
+
+  .funding-last {
+    display: none;
+  }
+
+  .funding-title-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-two-links::after {
+    content: "";
+  }
+}
+
+.funding-item img {
+  width: 80px;
+  height: 80px;
+  padding: 10px 10px 20px 10px;
+  display: inline-block;
+}
+
+.funding-header {
+  background:
+    linear-gradient(
+      0deg,
+      rgb(250, 230, 226) 55%,
+      rgba(255, 68, 34, 1) 55%
+    );
+}
+
+.funding-name {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.funding-info {
+  flex-basis: 70%;
+  padding-top: 1rem;
+}
+
+.funding-price {
+  padding-top: 1rem;
+  font-size: 18px;
+}
+
+.fund-type {
+  color: black;
+  font-family: "shentox-medium", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.fa-tag,
+.fa-briefcase {
+  display: block;
+  padding: 10px;
+}
+
+.funding-info-bottom {
+  font-family: "ars-maquette", sans-serif;
+  color: #555;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.funding-hr {
+  color: orange;
+  border-color: orange;
+}
+
+.funding-description {
+  padding: 1rem;
+  font-family: "ars-maquette", sans-serif;
+  font-size: 14px;
+}
+
+.gray-desc {
+  padding: 0 1rem 0 1rem;
+  font-size: 12px;
+  color: lightgray;
+}
+
+/************** CATEGORIES *******************/
+.categories {
+  display: grid;
+  width: 70%;
+  margin: 5rem auto;
+
+  /* grid-template-columns: repeat(auto-fit, minmax(220px, 410px)); */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .categories {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categories {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+}
+
+.cat-item h2 {
+  font: 700 25px "avalon-bold", sans-serif;
+  margin-bottom: 10px;
+}
+
+.bgd {
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 14px;
+  max-width: 100%;
+  min-height: 280px;
+  background-size: cover;
+  color: #fff9;
+  font-family: "ars-maquette", sans-serif;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.bgd-heading {
+  font-size: 13px;
+  font-family: "shentox-medium", sans-serif;
+  color: #fff;
+}
+
+.bgd-subheading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #fff;
+}
+
+.bgd-heading,
+.bgd-subheading {
+  text-decoration: none;
+}
+
+.bgd-heading:hover,
+.bgd-subheading:hover {
+  color: #fff;
+  text-decoration-thickness: 0.2px;
+}
+
+.latest-section {
+  height: 96px;
+  background-color: #fff4f2;
+}
+
+.latest-header {
+  flex-basis: 72%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+  color: #f42;
+  font: 700 14px/17.5px "ars-maquette", sans-serif;
+}
+
+.latest-header h3 {
+  font: 500 13px/1.5 "shentox-medium", sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.link-category {
+  flex-basis: 28%;
+  background-image: url(assets/winklevossbitcoin.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.cat-item ul {
+  list-style-type: none;
+}
+
+.category-subheading {
+  width: 100%;
+  display: inline-flex;
+  border-bottom: 1px solid #eee;
+}
+
+.category-subheading a {
+  font: 13px/19.5px "ars-maquette", sans-serif;
+  color: #555;
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.category-subheading a:hover {
+  color: #000;
+}
+
+.category-subheading::before {
+  display: block;
+  content: "•";
+  color: #f42;
+  margin-right: 5px;
+  padding-top: 6px;
+}
+
+.cat-bgd1 {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/Trump-Twitter.jpg);
+}
+
+.cat-bgd2 {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/trump2.jpg);
+}
+
+.cat-bgd3 {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/trump3.jpg);
+}
+
+.cat-bgd4 {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/trump4.jpg);
+}
+
+.cat-bgd5 {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/trump5.jpg);
+}
+
+.cat-bgd6 {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/trump6.jpg);
+}
+
+.cat-bgd7 {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/trump7.jpg);
+}
+
+.cat-bgd8 {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/trump8.jpg);
+}
+
+.cat-bgd9 {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(236, 143, 27, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/trump9.jpg);
+}
+
+.small-bgd1 {
+  background-image: url(assets/trump_small1.jpg);
+}
+
+.small-bgd2 {
+  background-image: url(assets/trump_small2.jpg);
+}
+
+.small-bgd3 {
+  background-image: url(assets/trump_small3.jpg);
+}
+
+.small-bgd4 {
+  background-image: url(assets/trump_small4.jpg);
+}
+
+.small-bgd5 {
+  background-image: url(assets/trump_small5.jpg);
+}
+
+.small-bgd6 {
+  background-image: url(assets/trump_small6.jpg);
+}
+
+.small-bgd7 {
+  background-image: url(assets/trump_small7.jpg);
+}
+
+.small-bgd8 {
+  background-image: url(assets/trump_small8.jpg);
+}
+
+.small-bgd9 {
+  background-image: url(assets/trump_small9.jpg);
+}
+
+/***************************************************** LATEST NEWS ******************************************************/
+.latest-news,
+.latest-deals {
+  width: 70%;
+  margin: auto;
+}
+
+.latest-news h2 {
+  font: 700 25px "avalon-bold", sans-serif;
+  margin-bottom: 20px;
+}
+
+.link-latest {
+  color: #f42;
+  text-decoration: none;
+}
+
+.link-latest::after,
+.funding-section-title::after {
+  display: inline-block;
+  content: "";
+  height: 16px;
+  width: 16px;
+  margin-left: 4px;
+  background-image: url("assets/arrow.svg");
+  background-size: 16px 16px;
+}
+
+.items-wrapper {
+  flex-flow: row wrap;
+  list-style-type: none;
+}
+
+.item {
+  flex-basis: 25%;
+  flex-direction: column;
+  padding: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .item {
+    flex-basis: 33.33%;
+  }
+}
+
+.news-container {
+  max-width: 270px;
+  padding: 5px;
+  flex-direction: column;
+}
+
+.align-news {
+  align-items: center;
+}
+
+.story {
+  flex-direction: column;
+  font: 700 16px/1.5 "ars-maquette", sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+.story:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.small-text {
+  font: 12px/18px "ars-maquette", sans-serif;
+  color: #aaa;
+}
+
+.news-tile {
+  width: 100%;
+  height: 135px;
+}
+
+.image-one {
+  background-image: url(assets/virgin-orbit.webp);
+}
+
+.image-two {
+  background-image: url(assets/james-harrison-vpOeXr5wmR4-unsplash-480x270.jpg);
+}
+
+.image-three {
+  background-image: url(assets/machine-learning.jpg);
+}
+
+.image-four {
+  background-image: url(assets/scrap.jpg);
+}
+
+.image-five {
+  background-image: url(assets/design-app-ui-startup.webp);
+}
+
+.image-six {
+  background-image: url(assets/wing-mirror-nuro-driverless-.jpeg);
+}
+
+.image-seven {
+  background-image: url(assets/Capitol-dating-app.jpg);
+}
+
+.image-eight {
+  background-image: url(assets/azure.jpg);
+}
+
+.news-tile,
+.latest-deals-tiles {
+  background-size: cover;
+  background-position: 50%;
+}
+
+.latest-deals-tiles {
+  position: relative;
+  min-height: 150px;
+  flex-basis: 65%;
+}
+
+@media screen and (max-width: 768px) {
+  .latest-deals,
+  .latest-news {
+    width: 90%;
+  }
+
+  .news-container {
+    max-width: 100%;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+  }
+
+  .news-tile {
+    width: 75px;
+    height: 75px;
+  }
+
+  .latest-deals-tiles {
+    flex-basis: 11%;
+    min-width: 75px;
+    min-height: 75px;
+  }
+
+  .desc {
+    flex-basis: 89%;
+    padding-left: 10px;
+  }
+
+  .deals-ribbon,
+  .discount {
+    display: none;
+  }
+}
+
+/********************************** STYLING RULES FOR LATEST DEALS SECTION ***********************************************************************/
+.deals-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deals-header h2 {
+  font: 700 28px "avalon-bold", sans-serif;
+  margin-bottom: 10px;
+}
+
+.deal-one {
+  background-image: url(assets/camera.jpg);
+}
+
+.deal-two {
+  background-image: url(assets/logic-pro.jpg);
+}
+
+.deals-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 80px;
+}
+
+.desc {
+  font-family: "ars-maquette", sans-serif;
+}
+
+.deal-description {
+  font: 700 14px/18px "ars-maquette", sans-serif;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.old-price {
+  font-size: 12px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+/********************************************** SOCIAL SECTION ****************************************************************************/
+
+.social {
+  height: 200px;
+  margin: 20px auto 0 auto;
+  background-color: #131313;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.social-row {
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.social-row li {
+  margin: 0 5px 0 5px;
+}
+
+.social-networks li {
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+.social-links {
+  font-family: "shenton-medium", sans-serif;
+}
+
+.about-links {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.about-links:hover {
+  color: white;
+}
+
+.social-networks li:hover {
+  background-color: black;
+}
+
+/********************************************** FOOTER *********************************************/
+
+footer {
+  margin: 0 auto;
+  background-color: #000;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: "ars-maquette", sans-serif;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.footer-line {
+  width: 80%;
+  text-align: center;
+}
+
+.footer-image {
+  width: 40px;
+  padding-right: 5px;
+}
+
+.stackpath {
+  width: 70px;
+}
