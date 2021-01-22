@@ -139,21 +139,26 @@ header {
 /************************************************ NAV *********************************************************************/
 
 nav {
-  align-items: center;
+  align-items: stretch;
   position: sticky;
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
   width: 100%;
+  height: 50px;
   top: 0;
   background-color: white;
   font-family: "shentox-medium", sans-serif;
   justify-content: space-between;
-  padding: 20px 10px 20px 10px;
+  padding: 0px 0px 0px 10px;
   z-index: 1;
+}
+
+.nav-items {
+  align-items: center;
 }
 
 .nav-links {
   text-decoration: none;
-  padding: 20px 5px;
+  padding: 1px 5px;
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.01rem;
@@ -164,21 +169,19 @@ nav {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   color: #aaa;
-  margin-left: 20px;
-}
-
-nav .right-align {
-  display: inline-flex;
-  list-style-type: none;
-}
-
-.right-align li {
-  margin: 0 10px 0;
-  border-left: 1px solid #aaa;
 }
 
 .nav-buttons {
-  margin-right: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.fa-search,
+.fa-bars {
+  border-right: 1px solid #ededed;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
 }
 
 .hamburger-menu {
@@ -195,7 +198,7 @@ nav .right-align {
   background-size: 70%;
   background-repeat: no-repeat;
   width: 90px;
-  height: 60px;
+  height: 50px;
 }
 
 .hover-black:hover {
@@ -207,21 +210,12 @@ nav .right-align {
     padding: 0;
   }
 
-  .nav-items {
-    display: flex;
-    align-items: center;
-  }
-
   .mobile-logo {
-    display: inline-flex;
+    display: flex;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .hamburger-menu {
-    display: list-item;
-    padding-left: 20px;
-  }
 
   .nav-links,
   .black-header {
@@ -229,13 +223,14 @@ nav .right-align {
   }
 
   .mobile-logo {
-    display: inline-flex;
+    display: flex;
   }
 
-  .right-align li {
-    margin: 0 5px 0 5px;
-    border-left: 1px solid #aaa;
+  .hamburger-menu {
+    display: flex;
+    border-left: 1px solid #ededed;
   }
+
 }
 
 /******************************************* HIGHLIGHTS **************************************************************/
@@ -256,11 +251,9 @@ nav .right-align {
 .big-left {
   grid-area: big-left;
   background-image:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     linear-gradient(135deg, rgba(242, 71, 21, 0.9) 40%, rgba(0, 0, 0, 0) 75%),
     url("assets/x-ray.webp");
   background-size: cover;
@@ -283,7 +276,7 @@ nav .right-align {
   color: white;
 }
 
-.big-left > img {
+.big-left>img {
   width: 30%;
   padding: 20px 2px 5px 15px;
 }
@@ -292,11 +285,9 @@ nav .right-align {
   justify-content: flex-end;
   grid-area: top;
   background-image:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(assets/gadget.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -307,11 +298,9 @@ nav .right-align {
   justify-content: flex-end;
   grid-area: bottom;
   background-image:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(assets/ev-phantom-rols-royce.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -326,7 +315,7 @@ nav .right-align {
   color: hsla(0, 0%, 100%, 0.6);
 }
 
-.highlights-heading-container > a {
+.highlights-heading-container>a {
   padding-bottom: 20px;
 }
 
@@ -341,11 +330,9 @@ nav .right-align {
 @media screen and (max-width: 1024px) {
   .big-left {
     background-image:
-      linear-gradient(
-        180deg,
+      linear-gradient(180deg,
         rgba(236, 143, 27, 0) 0%,
-        rgba(0, 0, 0, 1) 100%
-      ),
+        rgba(0, 0, 0, 1) 100%),
       url("assets/x-ray.webp");
   }
 
@@ -493,11 +480,9 @@ nav .right-align {
 
 .funding-header {
   background:
-    linear-gradient(
-      0deg,
+    linear-gradient(0deg,
       rgb(250, 230, 226) 55%,
-      rgba(255, 68, 34, 1) 55%
-    );
+      rgba(255, 68, 34, 1) 55%);
 }
 
 .funding-name {
@@ -681,91 +666,73 @@ nav .right-align {
 
 .cat-bgd1 {
   background-image:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(assets/Trump-Twitter.jpg);
 }
 
 .cat-bgd2 {
   background-image:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(assets/trump2.jpg);
 }
 
 .cat-bgd3 {
   background-image:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(assets/trump3.jpg);
 }
 
 .cat-bgd4 {
   background-image:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(assets/trump4.jpg);
 }
 
 .cat-bgd5 {
   background-image:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(assets/trump5.jpg);
 }
 
 .cat-bgd6 {
   background-image:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(assets/trump6.jpg);
 }
 
 .cat-bgd7 {
   background-image:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(assets/trump7.jpg);
 }
 
 .cat-bgd8 {
   background-image:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(assets/trump8.jpg);
 }
 
 .cat-bgd9 {
   background-image:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(236, 143, 27, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url(assets/trump9.jpg);
 }
 
@@ -927,6 +894,7 @@ nav .right-align {
 }
 
 @media screen and (max-width: 768px) {
+
   .latest-deals,
   .latest-news {
     width: 90%;
